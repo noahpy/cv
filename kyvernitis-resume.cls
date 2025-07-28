@@ -144,6 +144,24 @@
 % All arguments are compulsory
 % #1: Name, #2: Description, #3: Time Period, #4: Location
 
+\newenvironment{subsectionnolist}[4]{
+    \phantomsection
+    \addcontentsline{toc}{subsection}{#1}
+    \textbf{#1} \hfill \textit{#3} \newline
+    \textit{#2} \hfill \textit{#4}
+}
+
+\newenvironment{subsectionnosl}[2]{
+    \phantomsection
+    \addcontentsline{toc}{subsection}{#1}
+    \textbf{#1} \hfill \textit{#2}
+    \begin{list}{$\vbullet$}{
+        \leftmargin=2em
+    }
+    \itemsep -0.5em \vspace{-0.5em}
+}{
+    \end{list}
+}
 
 \renewenvironment{subsection}[4]{
     \phantomsection
