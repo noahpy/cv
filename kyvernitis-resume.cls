@@ -109,7 +109,7 @@
     % \addcontentsline{toc}{chapter}{\@name}
     \begin{tabularx}{\textwidth}{Xr}{
         \begin{tabular}[c]{l}
-            \fontsize{30}{36}\selectfont{\color{navyblue}{\textbf{\@name}}}
+            \fontsize{28}{33}\selectfont{\color{navyblue}{\textbf{\@name}}}
             \ifx\empty\@title\empty\else
                 \\ \textit{\small\@title}
             \fi
